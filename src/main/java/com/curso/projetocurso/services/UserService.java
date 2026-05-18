@@ -28,7 +28,7 @@ public class UserService {
         return user.orElseThrow(() -> new ResourceNotFoundException(id));
     }
 
-    public User inssert(User obj){
+    public User insert(User obj){
         return userRepository.save(obj);
     }
 
